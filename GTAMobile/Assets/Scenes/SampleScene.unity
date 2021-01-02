@@ -317,7 +317,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 534669902}
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:
