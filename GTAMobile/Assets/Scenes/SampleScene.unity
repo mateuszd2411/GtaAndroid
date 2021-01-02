@@ -839,7 +839,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 1.9
         - useVariable: 1
           name: 
           tooltip: 
@@ -3818,7 +3818,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495588440}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
@@ -3971,8 +3971,8 @@ MonoBehaviour:
   HorizontalAxisName: RightStickVertical
   VerticalAxisName: RightStickHorizontal
   HideOnRelease: 0
-  MoveBase: 0
-  SnapsToFinger: 0
+  MoveBase: 1
+  SnapsToFinger: 1
   JoystickMoveAxis: 3
   JoystickBase: {fileID: 1502163358}
   Stick: {fileID: 1502113210}
@@ -4008,7 +4008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495565300}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
