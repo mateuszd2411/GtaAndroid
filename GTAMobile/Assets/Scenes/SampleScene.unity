@@ -27410,7 +27410,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Rifle Idle
+          value: Equip
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -28076,7 +28076,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Idle
+          value: Un_Equip
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
