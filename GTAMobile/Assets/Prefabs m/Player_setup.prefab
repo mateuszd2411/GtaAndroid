@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &311702336554670123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900495864480795365}
+  m_Layer: 0
+  m_Name: Normal_pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900495864480795365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311702336554670123}
+  m_LocalRotation: {x: 0.25107285, y: -0, z: -0, w: 0.9679682}
+  m_LocalPosition: {x: 0.46000004, y: 0.9200001, z: -1.1400001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6396106841390039719}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5204671079428085965
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +481,7 @@ Transform:
   m_Children:
   - {fileID: 6396106840748252265}
   - {fileID: 6396106841425745742}
+  - {fileID: 1900495864480795365}
   m_Father: {fileID: 6396106841001386309}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2584,7 +2615,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010101
-        actionIsOpen: 000000000000000101
+        actionIsOpen: 000000000000000000
         actionStartIndex: 00000000040000000b00000010000000190000001c0000001f0000002300000026000000
         actionHashCodes: 2c2bfe0325696804ce8ec802f804e7041012c10027fbe10309fbab041012c1001012c100
         unityObjectParams: []
@@ -3484,10 +3515,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 945
-        y: 228
+        x: 958
+        y: 311
         width: 100
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -3500,6 +3531,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: FINISH
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 3
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.AnimatorCrossFade
@@ -3507,16 +3546,18 @@ MonoBehaviour:
         - How_To_Do.Playmaker.How_To_Do_GetButtonDown
         - HutongGames.PlayMaker.Actions.MoveTowards
         - HutongGames.PlayMaker.Actions.SmoothLookAt
+        - How_To_Do.Playmaker.How_To_Do_GetButtonDown
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0000000101
-        actionStartIndex: 0000000005000000090000000c00000013000000
-        actionHashCodes: 6d52840409fbab041012c100fa0e54024e661301
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 000000000001
+        actionStartIndex: 0000000005000000090000000c000000130000001c000000
+        actionHashCodes: 6d52840409fbab041012c100fa0e54024e6613011012c100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -3589,6 +3630,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Fire
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Aim
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -3668,6 +3715,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 0
@@ -3695,12 +3748,13 @@ MonoBehaviour:
         - fire
         - 
         - 
+        - FINISH
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000000f000000100000000f0000001400000012000000110000000100000012000000170000001100000014000000130000001c000000110000000f0000000f0000001700000014000000130000001c0000001c000000110000000f000000110000000f00000017000000
+        paramDataType: 14000000120000000f000000100000000f0000001400000012000000110000000100000012000000170000001100000014000000130000001c000000110000000f0000000f0000001700000014000000130000001c0000001c000000110000000f000000110000000f00000017000000120000001700000011000000
         paramName:
         - gameObject
         - stateName
@@ -3730,8 +3784,11 @@ MonoBehaviour:
         - debug
         - finishTolerance
         - finishEvent
-        paramDataPos: 00000000000000000000000000000000010000000100000001000000000000000000000002000000000000000100000002000000000000000000000002000000020000000300000001000000030000000100000001000000020000000300000004000000040000000500000002000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        - ButtonName
+        - SendEvent
+        - StoreResult
+        paramDataPos: 00000000000000000000000000000000010000000100000001000000000000000000000002000000000000000100000002000000000000000000000002000000020000000300000001000000030000000100000001000000020000000300000004000000040000000500000002000000030000000300000005000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: Fire
       description: 
       colorIndex: 0
@@ -3868,6 +3925,157 @@ MonoBehaviour:
         - storeObject
         paramDataPos: 000000000000000000000000000000000000000000000000010000000000000001000000000000000100000002000000
         paramByteDataSize: 000000000000000000000000010000000000000000000000010000000000000000000000000000000000000000000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 941
+        y: 174
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISH
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Rifle_idle
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AnimatorCrossFade
+        - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000050000000c000000
+        actionHashCodes: 6d528404fa0e540288611604
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 311702336554670123}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 6396106840748252278}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Rifle Idle
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.01
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0.000000029802322, y: -0.000000014485747, z: -0.00000002604499}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - FINISH
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000120000000f000000100000000f00000014000000130000001c000000110000000f0000000f0000001700000017000000
+        paramName:
+        - gameObject
+        - stateName
+        - transitionDuration
+        - layer
+        - normalizedTime
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreVertical
+        - maxSpeed
+        - finishDistance
+        - finishEvent
+        - sendEvent
+        paramDataPos: 00000000000000000000000000000000010000000100000000000000000000000000000002000000030000000000000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     events:
     - name: Aim
       isSystemEvent: 0
