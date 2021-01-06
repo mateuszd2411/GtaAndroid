@@ -26521,7 +26521,7 @@ RectTransform:
   m_Children:
   - {fileID: 703432445}
   m_Father: {fileID: 1483742074}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -26647,7 +26647,7 @@ RectTransform:
   m_Children:
   - {fileID: 553702537}
   m_Father: {fileID: 1483742074}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -26716,7 +26716,7 @@ RectTransform:
   - {fileID: 1483752628}
   - {fileID: 1483793550}
   m_Father: {fileID: 1483742074}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26735,11 +26735,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1483771322}
-  - {fileID: 448711633619371787}
   - {fileID: 1483738532}
   - {fileID: 1134004902}
   - {fileID: 8693838833066065737}
   - {fileID: 1345420691}
+  - {fileID: 448711633619371787}
+  - {fileID: 77874482631336770}
+  - {fileID: 1613665674}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27336,6 +27338,92 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!1 &1613665673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613665674}
+  - component: {fileID: 1613665677}
+  - component: {fileID: 1613665676}
+  - component: {fileID: 1613665675}
+  m_Layer: 5
+  m_Name: Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1613665674
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613665673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1483742074}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -230, y: 190}
+  m_SizeDelta: {x: 64, y: 64}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1613665675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613665673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f80d719f998a67438e69f9f995732ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonName: Fire
+--- !u!114 &1613665676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613665673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.036188774, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1613665677
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613665673}
+  m_CullTransparentMesh: 0
 --- !u!4 &1729864320
 Transform:
   m_ObjectHideFlags: 0
@@ -28576,7 +28664,7 @@ GameObject:
   - component: {fileID: 1729904273}
   - component: {fileID: 1729904271}
   m_Layer: 0
-  m_Name: michael_fullbody
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30215,7 +30303,7 @@ MonoBehaviour:
         x: 700.6719
         y: 198.48438
         width: 100
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -30236,6 +30324,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Aim
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Aim
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetAnimatorFloat
@@ -30246,6 +30342,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - How_To_Do.Playmaker.How_To_Do_GetButtonDown
+        - How_To_Do.Playmaker.How_To_Do_GetButtonDown
         customNames:
         - 
         - 
@@ -30255,10 +30352,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000001
-        actionStartIndex: 00000000040000000b00000010000000190000001c0000001f00000023000000
-        actionHashCodes: 2c2bfe0325696804ce8ec802f804e7041012c10027fbe10309fbab041012c100
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000101
+        actionStartIndex: 00000000040000000b00000010000000190000001c0000001f0000002300000026000000
+        actionHashCodes: 2c2bfe0325696804ce8ec802f804e7041012c10027fbe10309fbab041012c1001012c100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -30349,6 +30447,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Equip
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Aim
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -30440,6 +30544,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -30467,12 +30577,13 @@ MonoBehaviour:
         - 
         - Run
         - Un_equip
+        - Aim
         byteData: 010000000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000010000000f00000012000000120000000f00000007000000130000001c0000000f00000014000000120000000f0000000f00000001000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000012000000170000001100000011000000110000000100000014000000120000001100000001000000120000001700000011000000
+        paramDataType: 1400000012000000010000000f00000012000000120000000f00000007000000130000001c0000000f00000014000000120000000f0000000f00000001000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000012000000170000001100000011000000110000000100000014000000120000001100000001000000120000001700000011000000120000001700000011000000
         paramName:
         - gameObject
         - parameter
@@ -30512,8 +30623,11 @@ MonoBehaviour:
         - ButtonName
         - SendEvent
         - StoreResult
-        paramDataPos: 0000000000000000000000000000000001000000020000000100000001000000000000000000000002000000010000000300000003000000040000000500000002000000010000000500000002000000000000000600000006000000000000000100000004000000010000000200000003000000040000000700000003000000050000000500000008000000060000000200000006000000
-        paramByteDataSize: 0000000000000000010000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000
+        - ButtonName
+        - SendEvent
+        - StoreResult
+        paramDataPos: 0000000000000000000000000000000001000000020000000100000001000000000000000000000002000000010000000300000003000000040000000500000002000000010000000500000002000000000000000600000006000000000000000100000004000000010000000200000003000000040000000700000003000000050000000500000008000000060000000200000006000000070000000300000007000000
+        paramByteDataSize: 0000000000000000010000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000
     - name: Rifle_run
       description: 
       colorIndex: 0
@@ -30522,7 +30636,7 @@ MonoBehaviour:
         x: 666.9844
         y: 290.8672
         width: 100
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -30543,6 +30657,14 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Aim
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Aim
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - How_To_Do.Playmaker.How_To_Do_GetAxisVector
@@ -30551,6 +30673,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - How_To_Do.Playmaker.How_To_Do_GetButtonDown
+        - How_To_Do.Playmaker.How_To_Do_GetButtonDown
         customNames:
         - 
         - 
@@ -30558,10 +30681,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
-        actionIsOpen: 000000000101
-        actionStartIndex: 00000000070000001000000013000000160000001a000000
-        actionHashCodes: 25696804f804e7041012c10027fbe10309fbab041012c100
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 00000000010101
+        actionStartIndex: 00000000070000001000000013000000160000001a0000001d000000
+        actionHashCodes: 25696804f804e7041012c10027fbe10309fbab041012c1001012c100
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -30624,6 +30748,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Equip
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Aim
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -30697,6 +30827,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
@@ -30724,12 +30860,13 @@ MonoBehaviour:
         - 
         - Idle
         - Un_equip
+        - Aim
         byteData: 00000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 12000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000012000000170000001100000011000000110000000100000014000000120000001100000001000000120000001700000011000000
+        paramDataType: 12000000120000000f00000007000000130000001c0000000f000000140000001c0000000f0000001c000000110000000f00000001000000170000001100000012000000170000001100000011000000110000000100000014000000120000001100000001000000120000001700000011000000120000001700000011000000
         paramName:
         - horizontalAxis
         - verticalAxis
@@ -30760,8 +30897,11 @@ MonoBehaviour:
         - ButtonName
         - SendEvent
         - StoreResult
-        paramDataPos: 0000000001000000000000000000000000000000000000000100000000000000010000000200000002000000000000000300000004000000000000000100000002000000010000000200000003000000040000000500000001000000030000000500000006000000040000000200000006000000
-        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000
+        - ButtonName
+        - SendEvent
+        - StoreResult
+        paramDataPos: 0000000001000000000000000000000000000000000000000100000000000000010000000200000002000000000000000300000004000000000000000100000002000000010000000200000003000000040000000500000001000000030000000500000006000000040000000200000006000000050000000300000007000000
+        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000
     - name: Un_equip
       description: 
       colorIndex: 0
@@ -31109,7 +31249,179 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000010000000000000001000000010000000200000003000000020000000300000000000000
         paramByteDataSize: 0000000000000000000000000100000001000000000000000000000000000000010000000100000000000000
+    - name: Aim
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 945
+        y: 228
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: fire
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Fire
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AnimatorCrossFade
+        - How_To_Do.Playmaker.How_To_Do_GetButtonDown
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 6d5284041012c100
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Aim
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Fire
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.01
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - fire
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000120000000f000000100000000f000000120000001700000011000000
+        paramName:
+        - gameObject
+        - stateName
+        - transitionDuration
+        - layer
+        - normalizedTime
+        - ButtonName
+        - SendEvent
+        - StoreResult
+        paramDataPos: 0000000000000000000000000000000001000000010000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000
+    - name: Fire
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1104
+        y: 219
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
+    - name: Aim
+      isSystemEvent: 0
+      isGlobal: 0
     - name: FINISH
       isSystemEvent: 0
       isGlobal: 0
@@ -31126,6 +31438,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: Un_equip
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: fire
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -57486,6 +57801,92 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.9405684, y: 0.5, z: 1}
   m_Center: {x: -1.1313095, y: -4.732024e-15, z: 0.0000015513441}
+--- !u!224 &77874482631336770
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77874482644644280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1483742074}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -197, y: 297}
+  m_SizeDelta: {x: 64, y: 64}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &77874482631359216
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77874482644644280}
+  m_CullTransparentMesh: 0
+--- !u!1 &77874482644644280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77874482631336770}
+  - component: {fileID: 77874482631359216}
+  - component: {fileID: 77874482654766402}
+  - component: {fileID: 77874482654867976}
+  m_Layer: 5
+  m_Name: Aim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &77874482654766402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77874482644644280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.9295865, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!114 &77874482654867976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77874482644644280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f80d719f998a67438e69f9f995732ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonName: Aim
 --- !u!222 &448711633619263161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57506,7 +57907,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1483742074}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -57526,7 +57927,7 @@ GameObject:
   - component: {fileID: 448711633637556491}
   - component: {fileID: 448711633637529153}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Equip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77381,7 +77782,7 @@ RectTransform:
   m_Children:
   - {fileID: 325632150}
   m_Father: {fileID: 1483742074}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
